@@ -1,6 +1,8 @@
-# NoSleepScope
+# NeverSleep
 
 LSPosed module: keep the screen awake for apps selected in LSPosed scope.
+
+Module package name: `io.c4.ns`.
 
 - Package name: `io.c4.ns`
 - First recommended scope: `com.luna.music`
