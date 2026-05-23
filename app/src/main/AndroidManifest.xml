@@ -5,6 +5,7 @@
         android:allowBackup="false"
         android:extractNativeLibs="false"
         android:hasCode="true"
+        android:label="NeverSleep"
         android:supportsRtl="true">
 
         <meta-data
