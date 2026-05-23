@@ -6,9 +6,7 @@
         android:description="@string/app_description"
         android:extractNativeLibs="false"
         android:hasCode="true"
-        android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
