@@ -10,7 +10,10 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        // Xposed API 82 is no longer reliably available from Maven Central mirrors.
+        // Aliyun still mirrors the original artifact used by LSPosed/Xposed modules.
+        maven { url 'https://maven.aliyun.com/repository/public' }
     }
 }
-rootProject.name = 'NoSleepScope'
+rootProject.name = 'NeverSleep'
 include ':app'
