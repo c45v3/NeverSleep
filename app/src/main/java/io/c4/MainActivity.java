@@ -12,7 +12,7 @@ public final class MainActivity extends Activity {
         int pad = dp(20);
         view.setPadding(pad, pad, pad, pad);
         view.setTextSize(16f);
-        view.setText("NoSleepScope\n\nLSPosed module package: io.c4.ns\nXposed entry: io.c4.ns\nRecommended scope: com.luna.music\n\nEnable this module in LSPosed, select the target app scope, then force stop and reopen the target app. While the scoped app is in foreground, the module keeps its window screen-on flag enabled.");
+        view.setText("NeverSleep\n\nPackage: io.c4.ns\nEntry: io.c4.ns\nRecommended scope: com.luna.music\n\nEnable in LSPosed, select scope, then force stop and reopen the target app.");
         setContentView(view);
     }
 
