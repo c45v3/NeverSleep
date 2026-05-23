@@ -3,33 +3,21 @@
 
     <application
         android:allowBackup="false"
-        android:description="@string/app_description"
         android:extractNativeLibs="false"
         android:hasCode="true"
-        android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:supportsRtl="true">
 
         <meta-data
             android:name="xposedmodule"
             android:value="true" />
         <meta-data
             android:name="xposeddescription"
-            android:value="@string/app_description" />
+            android:value="Keep scoped apps awake." />
         <meta-data
             android:name="xposedminversion"
             android:value="82" />
         <meta-data
             android:name="xposedscope"
             android:value="com.luna.music" />
-
-        <activity
-            android:name="io.c4.MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 </manifest>
