@@ -23,26 +23,20 @@ This avoids changing global Android sleep policy. The behavior is limited to LSP
 ## Build
 
 ```bash
-./gradlew :app:assembleRelease
+./gradlew :app:assembleDebug
 ```
 
-The APK will be generated at:
+The debug-signed APK will be generated at:
 
 ```text
-app/build/outputs/apk/release/app-release-unsigned.apk
-```
-
-For local debug install:
-
-```bash
-./gradlew :app:assembleDebug
+app/build/outputs/apk/debug/app-debug.apk
 ```
 
 ## Usage
 
 1. Install the APK.
 2. Open LSPosed.
-3. Enable `NoSleepScope`.
+3. Enable `NeverSleep`.
 4. Select the target scope. Recommended first scope: `com.luna.music`.
 5. Force stop and reopen the target app.
 
@@ -56,13 +50,5 @@ For local debug install:
 
 The repository includes `.github/workflows/build.yml`.
 
-- Every push to `main`/`master` builds debug and unsigned release APKs.
-- The workflow uploads APKs as the `NoSleepScope-apks` artifact.
-- Pushing a tag like `v1.0.0` also creates a GitHub Release and attaches the APKs plus `SHA256SUMS.txt`.
-
-Release from a machine with push permission:
-
-```bash
-git tag v1.0.0
-git push origin main --tags
-```
+- Every push to `main`/`master` builds a debug-signed APK.
+- The workflow uploads `NeverSleep-debug.apk` as the `NeverSleep-debug` artifact.

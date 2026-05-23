@@ -12,7 +12,7 @@ import de.robv.android.xposed.XposedHelpers;
 import de.robv.android.xposed.callbacks.XC_LoadPackage;
 
 public final class ns implements IXposedHookLoadPackage {
-    private static final String TAG = "NoSleepScope";
+    private static final String TAG = "NeverSleep";
     private static final int KEEP_SCREEN_ON = WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON;
 
     @Override
