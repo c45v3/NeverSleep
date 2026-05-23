@@ -10,6 +10,8 @@ def test_manifest_declares_expected_package_and_xposed_metadata():
     assert "android:name="xposedmodule"" in manifest
     assert "android:name="xposeddescription"" in manifest
     assert "android:name="xposedminversion"" in manifest
+    assert "android:name="xposedscope"" in manifest
+    assert "android:value="com.luna.music"" in manifest
     assert "android:name="io.c4.MainActivity"" in manifest
 
 def test_gradle_uses_requested_application_id():

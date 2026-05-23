@@ -21,6 +21,9 @@
         <meta-data
             android:name="xposedminversion"
             android:value="82" />
+        <meta-data
+            android:name="xposedscope"
+            android:value="com.luna.music" />
 
         <activity
             android:name="io.c4.MainActivity"
